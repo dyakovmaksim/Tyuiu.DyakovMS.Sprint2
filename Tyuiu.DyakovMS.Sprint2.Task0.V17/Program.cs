@@ -19,10 +19,11 @@ namespace Tyuiu.DyakovMS.Sprint2.Task0.V17
             Console.WriteLine("*Написать программу из операций сравнений и арифметических выражений, кото*");
             Console.WriteLine("*орая вернет логическую последовательность.                               *");
 
-            Console.WriteLine("*                                                                         *");
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* ИСХОДНЫЕ ДАННЫЕ:                                                        *");
             Console.WriteLine("***************************************************************************");
+
+            Console.WriteLine("x = 1065, y = 755");
 
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("*                                                                         *");
@@ -34,8 +35,8 @@ namespace Tyuiu.DyakovMS.Sprint2.Task0.V17
 
             DataService ds = new DataService();
 
-            var result = ds.YOURFUNCTION();
-            Console.WriteLine(result);
+            var results = ds.GetCompareOperations(1065, 755);
+            Console.WriteLine(String.Join(", ", results));
             Console.ReadKey();
         }
     }
