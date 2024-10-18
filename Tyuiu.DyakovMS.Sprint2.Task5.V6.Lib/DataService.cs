@@ -12,16 +12,16 @@ namespace Tyuiu.DyakovMS.Sprint2.Task5.V6.Lib
             switch (value1)
             {
                 case 1:
-                    suit = "пики";
+                    suit = "пик";
                     break;
                 case 2:
-                    suit = "трефы";
+                    suit = "треф";
                     break;
                 case 3:
-                    suit = "бубны";
+                    suit = "бубен";
                     break;
                 case 4:
-                    suit = "черви";
+                    suit = "червей";
                     break;
                 default:
                     throw new ArgumentException($"Масть карты должна быть от 1 до 4.Значение{value1}");
@@ -59,7 +59,7 @@ namespace Tyuiu.DyakovMS.Sprint2.Task5.V6.Lib
                 default:
                     throw new ArgumentException($"Достоинство карты должно быть от 6 до 14.Значение{value2}");
             }
-            return $"{suit} {rang}";
+            return $"{rang} {suit}";
         }
     }
 }
